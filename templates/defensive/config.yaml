@@ -1,0 +1,17 @@
+# 防御型策略配置 — 低风险、保本优先
+overnight:
+  score_weights:
+    momentum: 0.10
+    turnover: 0.10
+    market: 0.15
+    target: 0.15
+    capital: 0.20
+    technical: 0.20
+    quantitative: 0.10
+  entry:
+    price_range: [3, 30]
+    turnover_range: [1, 10]
+    change_range: [0, 5]
+  exit:
+    profit_target: 0.025
+    stop_loss: -0.015

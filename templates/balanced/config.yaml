@@ -1,0 +1,17 @@
+# 稳健型策略配置 — 均衡型
+overnight:
+  score_weights:
+    momentum: 0.15
+    turnover: 0.15
+    market: 0.10
+    target: 0.10
+    capital: 0.20
+    technical: 0.20
+    quantitative: 0.10
+  entry:
+    price_range: [5, 50]
+    turnover_range: [3, 15]
+    change_range: [1, 7]
+  exit:
+    profit_target: 0.04
+    stop_loss: -0.02
